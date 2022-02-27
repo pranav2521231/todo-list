@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <style>
+		*{
+		box-sizing:border-box;
+		padding:0;
+		margin:0;
+		}
+		
+		.header{
+		min-height:60vh;
+		background:url('./imgFolder/img7.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+		color:#fff;
+		position:relative;
+		}
+		
+		a{
+		text-decoration:none;
+		color:#fff;
+		}
+		
+		.container{
+		max-width:1200px;
+		width:90%;
+		margin:auto;
+		}
+		.nav{
+		display:flex;
+		justify-content:space-between;
+		min-height:8vh;
+		}
+		.nav-items{
+		list-style:none;
+		display:flex;
+		justify-content:space-between;
+		width:40%;
+		align-items:center;
+		}
+		
+		.headline{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		text-align:center;
+		}
+		
+		.btn{
+		display:inline-block;
+		cursor:pointer;
+		border:none;
+		outloine:none;
+		}
+		
+		.btn-headline{
+		padding:1rem 1rem;
+		font-size:1rem;
+		margin-top:1rem;
+		font-weight:600
+		}
+		
+		.bg-dark{
+		background-color: #ccc;
+		}
+		
+		.section-todo{
+		margin-top:5rem;
+		text-align:center;
+		}
+		
+		.form-todo{
+		min-height:5vh;
+		display:flex;
+		justify-content:space-between;
+		margin-top:1rem;
+		}
+		
+		.form-todo input{
+		min-height:100%;
+		}
+		
+		.form-todo input[type="text"]{
+		width:70%;
+		padding: .8rem;
+		font-size: 1rem;
+		font-weight:400;
+		}
+		.form-todo input[type="button"]{
+		width:20%;
+		background:#001119;
+		background:rgb(44,55,63);
+		color:#fff;
+		font-weight:bold;
+		}
+		
+		.form-todo input[type="submit"]{
+		width:20%;
+		background:#001119;
+		background:rgb(44,55,63);
+		color:#fff;
+		font-weight:bold;
+		}
+		
+		.section-signup{
+		margin:5rem auto;
+		text-align:center;
+		background:rgb(240,240,240);
+		border-radius:10px;
+		padding:1rem;
+		}
+		
+		.signup-form label{
+		display:block;
+		}
+		.signup-form input{
+		display:block;
+		width:100%;
+		padding:.5rem;
+		}
+		
+		.signup-form{
+		max-width: 800px;
+		width:95%;
+		margin:auto;
+		text-align:left;
+		}
+		
+		.form-group{
+		margin-top:1rem;
+		}
+		
+		.signup-form textarea{
+		width:100%;
+		}
+		
+		.signupbtn{
+		background: rgb(44,55,63);
+		padding:1rem 2rem;
+		color:#fff;
+		display:block;
+		margin:auto;
+		margin-top:1rem;
+		}
+		
+		.todo-list{
+		list-style-type:none;
+		text-align:left;
+		font-size:1.2rem;
+		}
+		
+		.todo-list li{
+		background-color: rgb(44,55,63);
+		color:#fff;
+		padding:.7rem;
+		margin-top:1rem;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		}
+		
+		.todo-btn{
+		padding:0.5rem 1rem;
+		font-size:1rem;
+		font-weight:bold;
+		cursor:pointer;
+		}
+		
+		
+		</style>
+    </head>
+     <body>
+	 
+	 <header class="header">
+	 <nav class="nav container">
+	  <h1 class="logo">Website</h1>
+	  <ul class="nav-items">
+	  <li><a href="#home" class="items">Home</a></li>
+	  <li><a href="" class="items">Todo</a></li>
+	  <li><a href="" class="items">Sign Up</a></li>
+	  </ul>
+	 </nav>
+	    <div class="headline">
+		<h2 id="main-heading">Manage your tasks <span style="display:none"> Hello </span></h2>
+		<button class="btn btn-headline" id="one">Learn More</button>
+		</div>
+	 </header>
+	 <section class="section-todo container">
+		  <h2>Your plan for today ?</h2>
+		  <form action="" class="form-todo">
+		     <input type="text" name="" id="" placeholder="Add todo">
+			 <input type="submit" value="Add Todo" class="btn">
+		  </form>
+		  <ul class="todo-list">
+		<!--     <li>
+			     <span class="text">Do this do that</span>
+				 <div class="todo-buttons">
+				   <button class="todo-btn done">Done</button>
+				   <button class="todo-btn remove">Remove</button>
+				 </div>
+			 </li>   -->
+			 
+		  </ul>
+		</section>
+		<section class="container section-signup">
+		<h2>Sign Up</h2>
+		<form class="signup-form">
+		<div class="form-group">
+		<label for="username">Username<label>
+		<input type="text" name="username" id="username">
+		</div>
+		<div class="form-group">
+		<label for="password">Password<label>
+		<input type="password" name="password" id="password">
+		</div>
+		<div class="form-group">
+		<label for="ConfirmPassword">Confirm Pasword<label>
+		<input type="password" name="ConfirmPassword" id="ConfirmPassword">
+		</div>
+		<div class="form-group">
+		<label for="phone">Phone<label>
+		<input type="text" name="phone" id="phone">
+		</div>
+		<div class="form-group">
+		<label for="email">Email<label>
+		<input type="email" name="email" id="email">
+		</div>
+		<div class="form-group">
+		<label for="about">About Yourself<label>
+		<textarea name="about" id="about" cols="30" rows="10"></textarea>
+		</div>
+		<div class="form-group">
+		<button type="submit" class="btn signupbtn">Submit</button>
+		</div>
+		
+		</form>
+		</section>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+         <script>
+		      
+             const todoForm=document.querySelector(".form-todo");
+			 const todoInput=document.querySelector(".form-todo input[type='text']");
+			 const ul=document.querySelector(".todo-list");
+			 //console.log(todoInput)
+			 //console.log(todoForm)
+			 todoForm.addEventListener("submit",(e)=>{
+			 e.preventDefault();
+			 //console.log("form submitted");
+			 const newTodoText=todoInput.value;
+			 const newLi=document.createElement("li");
+			 const newLiHTML = `
+			      <span class="text">${newTodoText}</span>
+				 <div class="todo-buttons">
+				   <button class="todo-btn done">Done</button>
+				   <button class="todo-btn remove">Remove</button>
+				 </div>`;
+			 newLi.innerHTML=newLiHTML;
+			 ul.append(newLi);
+			 todoInput.value="";
+			 })
+		
+		 ul.addEventListener("click",(e)=>{
+		 // console.log(e.target.classList);
+		 if(e.target.classList.contains("done")){
+		 //console.log("Clicked")
+		 const workedDone=e.target.parentNode.previousElementSibling;
+		 workedDone.style.textDecoration="line-through";
+		 }
+		 if(e.target.classList.contains("remove")){
+		 //console.log("removed")
+		 const removeItem=e.target.parentNode.parentNode;
+		 //console.log(removeItem);
+		 removeItem.remove();
+		 }
+		
+		 })
+		
+		 
+		 
+		  
+		  </script>
+   
+        </body>
+    </html>
+
